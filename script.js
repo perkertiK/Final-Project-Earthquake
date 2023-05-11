@@ -19,9 +19,21 @@ let markers = L.markerClusterGroup({
 
 // Fetch earthquake data from USGS API
 async function getEarthquakeData() {
-  const response = await fetch("https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2020-01-01&endtime=2020-01-02");
-  const data = await response.json();
-  return data.features;
+  const localStorageKey = 'earthquakeData20200101-20200102';
+
+  let data = JSON.parse(localStorage.getItem(localStorageKey));
+
+  if (!data) {
+    // Fetch it from the server
+    console.log("fetching data");
+    const response = await fetch("https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2020-01-01&endtime=2020-01-02");
+    data = await response.json();
+    data = data.features;
+
+    localStorage.setItem(localStorageKey, JSON.stringify(data));
+  }
+
+  return data;
 }
 
 getEarthquakeData().then(quakes => {

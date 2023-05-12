@@ -1,35 +1,31 @@
-
-
 #mapid {
-    height: 500px;
-    margin: 20px 0;
-  }
-  
-  .marker-cluster-small {
-    background-color: #48e13d;
-  }
-  
-  .marker-cluster-medium {
-    background-color: #cdde4f;
-  }
-  
-  .marker-cluster-large {
-    background-color: #ca2816;
-  }
-  
-  .marker {
-    color: #fff;
-    background-color: #2c3e50;
-    border-radius: 50%;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    text-align: center;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .marker:hover {
-    transform: scale(1.2);
-  }
-  
+  height: 500px;
+  margin: 20px 0;
+}
+
+.marker-cluster-large {
+  background-color: #e71b1b;
+}
+
+.marker-cluster-medium {
+  background-color: #fff159;
+}
+
+.marker-cluster-small {
+  background-color: #81ff4b;
+}
+
+.marker {
+  color: #fff;
+  background-color: rgb(99, 85, 85);
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.marker:hover {
+  transform: scale(1.2);
+}

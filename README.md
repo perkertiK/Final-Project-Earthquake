@@ -1,6 +1,7 @@
-TITLE OF OUR PROJECT: Shaking the Earth: An Exploration of Global Earthquake Activity in 2020
+**TITLE OF OUR PROJECT:** Shaking the Earth: An Exploration of Global Earthquake Activity in 2020
 
-LINK:
+**LINK:**
 https://perkertik.github.io/Final-Project-Earthquake/
 
-Target Browser: Google Chrome, Safari
+**Target Browser:** Google Chrome, Safari
+
